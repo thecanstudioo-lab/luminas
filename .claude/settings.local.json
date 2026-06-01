@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(echo \"npm: $\\(npm -v 2>&1\\)\")",
+      "Bash(npx -v)",
+      "Bash(echo \"npx: $\\(npx -v 2>&1\\)\")",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Read(//c/Users/User/Downloads/**)",
+      "Bash(mkdir -p \"C:/Users/User/OneDrive/Desktop/lumina/_design-handoff\")",
+      "Bash(unzip -o \"Luminas Design System-handoff.zip\" -d \"C:/Users/User/OneDrive/Desktop/lumina/_design-handoff\")",
+      "Bash(claude mcp *)",
+      "Bash(mkdir -p app/fonts)",
+      "Bash(cp __TRACKED_VAR__/Archivo-__TRACKED_VAR__.ttf app/fonts/)",
+      "mcp__magic__21st_magic_component_refiner",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm audit *)",
+      "Bash(mkdir -p .next)",
+      "Bash(cmd //c \"attrib +P /S /D .next\")",
+      "Bash(cmd //c \"attrib .next\")",
+      "Bash(npx tsc *)",
+      "Bash(echo \"=== tsc exit: $? ===\")",
+      "mcp__e9adc847-83b1-4748-9734-38878e067540__list_projects",
+      "mcp__e9adc847-83b1-4748-9734-38878e067540__list_tables",
+      "mcp__e9adc847-83b1-4748-9734-38878e067540__apply_migration",
+      "mcp__e9adc847-83b1-4748-9734-38878e067540__get_project_url",
+      "mcp__e9adc847-83b1-4748-9734-38878e067540__get_publishable_keys",
+      "mcp__e9adc847-83b1-4748-9734-38878e067540__execute_sql"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+<!--
+  LUMINAS — Correo de "cita confirmada por el spa" (evento booking.confirmed).
+  Para el Zap de confirmación (Gmail · Body Type: HTML). Reemplaza los {{campos}}
+  con los del Catch Hook (vienen bajo data.*: data.service, data.location, etc.).
+-->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EFE9DF;margin:0;padding:32px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <tr>
+    <td align="center">
+      <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="width:560px;max-width:92%;background:#FCFAF5;border:1px solid #E4DBCB;">
+
+        <tr>
+          <td style="padding:36px 40px 24px;border-bottom:1px solid #E4DBCB;">
+            <div style="font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#2C261E;">LUMINAS<span style="color:#647B57;">.</span></div>
+            <div style="margin-top:6px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#8A7D6C;">Spa de alta gama · Bogotá</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:32px 40px 8px;">
+            <div style="display:inline-block;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#647B57;border:1px solid #647B57;border-radius:999px;padding:5px 12px;">Confirmada por el spa</div>
+            <div style="margin-top:16px;font-size:26px;line-height:1.2;font-weight:700;color:#2C261E;letter-spacing:-0.015em;">Tu cita está confirmada.</div>
+            <p style="margin:14px 0 0;font-size:15px;line-height:1.6;color:#4A4136;">
+              Hola {{guest_name}}, nuestro equipo confirmó tu reserva. Te esperamos en Luminas.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:24px 40px 8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#2C261E;">
+              <tr>
+                <td style="padding:22px 28px;text-align:center;">
+                  <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#BCB1A0;">Código de confirmación</div>
+                  <div style="margin-top:8px;font-size:30px;font-weight:800;letter-spacing:0.14em;color:#FCFAF5;">{{confirmation_code}}</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px 40px 8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;color:#2C261E;">
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Tratamiento</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;font-weight:600;">{{service}}</td></tr>
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Sede</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;font-weight:600;">{{location}}</td></tr>
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Dirección</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;">{{location_address}}, {{location_city}}</td></tr>
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Fecha</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;font-weight:600;">{{appointment_date}}</td></tr>
+              <tr><td style="padding:12px 0;color:#8A7D6C;">Hora</td><td style="padding:12px 0;text-align:right;font-weight:600;">{{time_slot}} · {{service_duration_min}} min</td></tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px 40px 36px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EBE3D4;">
+              <tr>
+                <td style="padding:22px 26px;">
+                  <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6A5D4E;">Instrucciones para tu día de Spa</div>
+                  <p style="margin:12px 0 0;font-size:14px;line-height:1.7;color:#2C261E;">
+                    Llegar 15 minutos antes, usar ropa cómoda y avisar cualquier alergia o condición médica.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:24px 40px;border-top:1px solid #E4DBCB;text-align:center;">
+            <a href="{{cancel_url}}" style="display:inline-block;font-size:12px;color:#6A5D4E;text-decoration:underline;">Cancelar o reagendar mi cita</a>
+            <div style="margin-top:16px;font-size:13px;color:#6A5D4E;font-style:italic;">El silencio tiene arquitectura.</div>
+            <div style="margin-top:8px;font-size:11px;color:#A89A86;">Mensaje informativo.</div>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>

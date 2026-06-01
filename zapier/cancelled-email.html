@@ -1,0 +1,62 @@
+<!--
+  LUMINAS — Correo de "cita cancelada" (evento booking.cancelled).
+  Para el Zap de cancelación (Gmail · Body Type: HTML). Campos bajo data.*
+-->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EFE9DF;margin:0;padding:32px 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <tr>
+    <td align="center">
+      <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="width:560px;max-width:92%;background:#FCFAF5;border:1px solid #E4DBCB;">
+
+        <tr>
+          <td style="padding:36px 40px 24px;border-bottom:1px solid #E4DBCB;">
+            <div style="font-size:22px;font-weight:800;letter-spacing:-0.01em;color:#2C261E;">LUMINAS<span style="color:#B07A4B;">.</span></div>
+            <div style="margin-top:6px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#8A7D6C;">Spa de alta gama · Bogotá</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:32px 40px 8px;">
+            <div style="display:inline-block;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#B07A4B;border:1px solid #B07A4B;border-radius:999px;padding:5px 12px;">Cita cancelada</div>
+            <div style="margin-top:16px;font-size:26px;line-height:1.2;font-weight:700;color:#2C261E;letter-spacing:-0.015em;">Tu cita fue cancelada.</div>
+            <p style="margin:14px 0 0;font-size:15px;line-height:1.6;color:#4A4136;">
+              Hola {{guest_name}}, confirmamos la cancelación de tu reserva. El cupo quedó liberado.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px 40px 8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;color:#2C261E;">
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Código</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;font-weight:600;">{{confirmation_code}}</td></tr>
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Tratamiento</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;font-weight:600;">{{service}}</td></tr>
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Sede</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;font-weight:600;">{{location}}</td></tr>
+              <tr><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;color:#8A7D6C;">Fecha</td><td style="padding:12px 0;border-bottom:1px dashed #E4DBCB;text-align:right;">{{appointment_date}}</td></tr>
+              <tr><td style="padding:12px 0;color:#8A7D6C;">Hora</td><td style="padding:12px 0;text-align:right;">{{time_slot}}</td></tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px 40px 36px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EBE3D4;">
+              <tr>
+                <td style="padding:22px 26px;text-align:center;">
+                  <p style="margin:0 0 14px;font-size:14px;line-height:1.6;color:#2C261E;">¿Fue un error o deseas reagendar?</p>
+                  <a href="https://TU-DOMINIO/#reservar" style="display:inline-block;background:#2C261E;color:#FCFAF5;font-size:13px;font-weight:600;text-decoration:none;padding:12px 26px;">Agendar una nueva cita</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:24px 40px;border-top:1px solid #E4DBCB;text-align:center;">
+            <div style="font-size:13px;color:#6A5D4E;font-style:italic;">El silencio tiene arquitectura.</div>
+            <div style="margin-top:8px;font-size:11px;color:#A89A86;">Mensaje informativo.</div>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
