@@ -26,7 +26,10 @@
       "mcp__e9adc847-83b1-4748-9734-38878e067540__apply_migration",
       "mcp__e9adc847-83b1-4748-9734-38878e067540__get_project_url",
       "mcp__e9adc847-83b1-4748-9734-38878e067540__get_publishable_keys",
-      "mcp__e9adc847-83b1-4748-9734-38878e067540__execute_sql"
+      "mcp__e9adc847-83b1-4748-9734-38878e067540__execute_sql",
+      "Bash(git config *)",
+      "Bash(git -c core.autocrlf=false commit -q -m ' *)",
+      "Bash(git add *)"
     ]
   }
 }
