@@ -31,7 +31,10 @@
       "Bash(git -c core.autocrlf=false commit -q -m ' *)",
       "Bash(git add *)",
       "Bash(git remote *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "mcp__5b1c221b-ec44-4763-b268-12fa11acd35e__deploy_to_vercel",
+      "Bash(npx --yes vercel deploy --prod --yes)",
+      "Bash(curl -s -X POST https://oecgxjpheetyxaffmdwy.supabase.co/rest/v1/rpc/get_upcoming_availability -H 'apikey: sb_publishable_AoKecI48zskeCe_AJT-NBw_wue1u0O2' -H 'Authorization: Bearer sb_publishable_AoKecI48zskeCe_AJT-NBw_wue1u0O2' -H 'Content-Type: application/json' -H 'Origin: https://lumina-kappa-dusky.vercel.app' -d '{}' -w '\\\\n[HTTP %{http_code}]\\\\n')"
     ]
   }
 }
